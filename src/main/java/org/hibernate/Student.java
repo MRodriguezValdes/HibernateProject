@@ -7,28 +7,35 @@ public class Student {
 
     private String name;
 
-
+    private int age;
     private String lastname;
-
-
     private String email;
-
-
     private String phone;
+
 
     public Student() {
 
     }
 
-    public Student(String name, String lastName, String email, String phone) {
+
+    public Student(String name, String lastName, String email, String phone,int age) {
         this.setName(name);
         this.setLastname(lastName);
         this.setEmail(email);
         this.setPhone(phone);
+        this.setAge(age);
     }
 
 
     // Getters and Setters
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
     public int getId() {
         return id;
     }
